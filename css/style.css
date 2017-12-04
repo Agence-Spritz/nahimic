@@ -343,6 +343,7 @@ text-align: center;
 	bottom: 0px;
 	left: 50%;
 	margin-left: -80px;
+	cursor: pointer;
 }
 
 .separation.noir {
@@ -646,6 +647,7 @@ padding-bottom: 100px;
 	line-height: 38px;
 	width: 160px;
 	margin: 0 auto 35px auto;
+	cursor: pointer;
 }
 
 .bouton-fil-blanc:hover {
