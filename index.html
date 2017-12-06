@@ -55,7 +55,7 @@
 	<body>
 
 	<!-- Section slide en-tete -->
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/fond-parallax.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/fond-header-2.jpg);" data-stellar-background-ratio="0.5">
 		
 		<div class="container">
 			<div class="text-wrap">
@@ -99,12 +99,36 @@
 					<p class="semi">Use your headphones and experience the audio
 						with and without Nahimic.
 					</p>
-				        <audio controls>
-				          <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
-				          <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-				          <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
-				          An html5-capable browser is required to play this audio. 
-				        </audio>
+
+					<div class="col-md-12">
+						<audio id="audio" controls="controls">
+						  <source id="audioSource" src="images/son/GamingNahimicOn.wav"></source>
+						  Your browser does not support the audio format.
+						</audio>
+					</div>
+					
+						    <ul id="list" class="boutons-son">
+						      <li class="col-md-6"><div class="bouton-son"><a href="#" data-value="images/son/GamingNahimicOff.wav">Sans Nahimic</a></div></li>
+						      <li class="col-md-6"><div class="bouton-son"><a href="#" data-value="images/son/GamingNahimicOn.wav">Avec Nahimic</a></div></li>
+						      <div class="clearfix"></div>
+						    </ul>
+						  					
+					<script>
+						list.onclick = function(e) {
+					  e.preventDefault();
+					
+					  var elm = e.target;
+					  var audio = document.getElementById('audio');
+					
+					  var source = document.getElementById('audioSource');
+					  source.src = elm.getAttribute('data-value');
+					
+					  audio.load(); //call this to just preload the audio without playing
+					  audio.play(); //call this to play the song right away
+					};
+					</script>
+
+
 				</div>
 			<div class="col-md-2">
 			</div>
@@ -201,12 +225,13 @@
 	</section>
 	
 	<!-- Section 3 ronds -->
-	<section id="fh5co-section2" class="fond-parallax"  style="background-image: url(images/fond-header.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-section2" class="fond-parallax"  data-section="home" style="background-image: url(images/fond-header-2.jpg);" data-stellar-background-ratio="0.5">
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 espace-rond">
-					<div class="rond-blanc">
-						<img class="img-responsive" src="images/pictos/picto-voice.png" title="Voice Clarity" alt="Voice Clarity" />
+					<div class="rond-blanc" style="background-image: url('images/pictos/picto-voice.png');">
+<!-- 						<img class="img-responsive" src="images/pictos/picto-voice.png" title="Voice Clarity" alt="Voice Clarity" /> -->
 						<h4>Voice</h4>
 					</div>
 					<p>In order to get a crispy dialog from a movie or game, our advanced audio technology identifies and treats the center sound information, where dialogs are located</p>
@@ -214,16 +239,16 @@
 				</div>
 	
 				<div class="col-md-4 espace-rond">
-					<div class="rond-blanc">
-						<img class="img-responsive" src="images/pictos/picto-bass.png" title="Bass Boost" alt="Bass Boost" />
+					<div class="rond-blanc" style="background-image: url('images/pictos/picto-bass.png');">
+<!-- 						<img class="img-responsive" src="images/pictos/picto-bass.png" title="Bass Boost" alt="Bass Boost" /> -->
 						<h4>Bass</h4>
 					</div>
 					<p>Bass Boost audio feature delivers deep low frequency that punches some live feeling like explosion, engine, beats, etc.</p>
 					<div class="bouton-fil-blanc" data-toggle="modal" data-target=".bd-bass-modal-lg">More</div>
 				</div>
 				<div class="col-md-4 espace-rond">
-					<div class="rond-blanc">
-						<img class="img-responsive" src="images/pictos/picto-treble.png" title="Treble" alt="Treble" />
+					<div class="rond-blanc" style="background-image: url('images/pictos/picto-treble.png');">
+<!-- 						<img class="img-responsive" src="images/pictos/picto-treble.png" title="Treble" alt="Treble" /> -->
 						<h4>Treble</h4>
 					</div>
 					<p>This sound effect enhances the high frequencies, that you can perceive all details in your game or movie. A real advantage to clearly hear the location of footsteps or gunshots in your game</p>
@@ -350,20 +375,20 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 heading text-center">
-					<h2>YOOMIX</h2>
+					<h2>VOICEBOOST</h2>
 					<h4 style="text-align: center;">Your ultimate communication solution</h4>
 					<div class="separation blanc"></div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 mb-25">
-					<p>YOOMIX is a VOLUME AUDIO MIXER that manages VOIP & Apps audio volume? And is the smartest tool for gamers playing online multiplayers games.</p>
-					<p>YOOMIX gives communication PRIORITY TO THE VOICE of the team over the game sound in order to have the CLEAREST COMMUNICATION between them</p>
+					<p>VoiceBoost is a VOLUME AUDIO MIXER that manages VOIP & Apps audio volume? And is the smartest tool for gamers playing online multiplayers games.</p>
+					<p>VoiceBoost gives communication PRIORITY TO THE VOICE of the team over the game sound in order to have the CLEAREST COMMUNICATION between them</p>
 					<p>Only available in your favorite DRAGON CENTER </p>
 					<img src="images/logo-msi.png" title="msi" alt="msi" class="image-center img-responsive"/>
 				</div>
 				<div class="col-md-6 col-xs-12 mb-25">
-					<img src="images/image-jeu.png" class="img-responsive" title="A companion to explore your playfield" alt="A companion to explore your playfield" />
+					<img src="images/dc_Yoomix3.png" class="img-responsive" title="A companion to explore your playfield" alt="A companion to explore your playfield" />
 				</div>
 			</div>
 			
