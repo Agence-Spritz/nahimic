@@ -338,6 +338,41 @@ text-align: center;
 	margin: 0 auto 50px auto
 }
 
+#fh5co-section1 ul.boutons-son {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto 15px auto;
+}
+
+#fh5co-section1 ul.boutons-son li .bouton-son {
+background: #203949;
+border: 1px solid #00e2ff;
+text-align: center;
+font-size: 20px;
+line-height: 38px;
+padding: 15px;
+position: relative;
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+display: block;
+margin-bottom: 15px;
+}
+
+
+
+#fh5co-section1 ul.boutons-son li .bouton-son a:link, #fh5co-section1 ul.boutons-son li .bouton-son a:visited {
+	text-decoration: none !important;
+	color: #fff;
+}
+
+#fh5co-section1 ul.boutons-son li .bouton-son:hover {
+	text-decoration: none;
+	background-color: #1c2737;
+}
+
+
+
 .pave-bleu .bouton-fil-blanc {	
 	position: absolute;
 	bottom: 0px;
@@ -361,7 +396,6 @@ text-align: center;
 	background: rgba(255,255,255,1);
 	margin: 35px auto 35px auto;
 }
-
 
 
 #fh5co-section2 {
@@ -604,6 +638,7 @@ text-align: center;
  background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center top !important;
   position: relative;
   width: 100%;
   color: #fff;
@@ -615,13 +650,17 @@ padding-bottom: 100px;
 #fh5co-section2 .rond-blanc {
 	width: 250px;
 	height: 250px;
-	background: #fff;
+	background: #203949;
+	 background-size: contain;
+  background-position: center center;
+  position: relative;
+	border: 1px solid #00e2ff;
 	-webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   margin: 0 auto 45px auto;
-  padding-top: 50px;
+  padding-top: 195px;
 }
 
 #fh5co-section2 .rond-blanc img {
@@ -630,11 +669,11 @@ padding-bottom: 100px;
 }
 
 #fh5co-section2 .rond-blanc h4 {
-	color: rgba(19,32,49,1);
-	font-family: "Segoe semibold";
+	color: rgba(255,255,255,1);
+	font-family: "Segoe";
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .espace-rond p{
