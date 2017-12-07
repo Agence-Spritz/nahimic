@@ -64,6 +64,10 @@
 	#fh5co-section1 h2, #fh5co-section2 h2 {
 		line-height: 80px !important;
 	}
+	
+	#fh5co-section2 .espace-rond p {
+		height: auto !important;
+	}
 
 }
 
@@ -439,6 +443,10 @@ width: 100%;
 
 #fh5co-section2 p {
 	color: #fff;
+}
+
+#fh5co-section2 .espace-rond p {
+	height: 150px;
 }
 
 #fh5co-section2 h4 {
